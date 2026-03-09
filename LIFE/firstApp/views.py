@@ -18,3 +18,17 @@ def contact(request):
         'location':'Nairobi' 
         }
     return render(request, 'contact.html', context)
+
+
+
+def experiences(request):
+    context= {
+        'places':['Germany', 'Canada', 'Kuwait'],
+        'year':2026,
+        'age':20
+    }  # dictionary tht will host our data
+    return render(request, 'experience.html', context)
+
+
+def landing(request):
+    return render(request, 'landing.html')

@@ -1,0 +1,13 @@
+{% include 'base.html' %}
+
+{% block content %}
+
+<h1>EXPERIENCES!!! </h1>
+    <hr>
+    <h1>{{places}}</h1>
+    <hr>
+    {% for country in places %}
+    <h3>{{country}}</h3>
+    {% endfor %}
+
+{% endblock %}
