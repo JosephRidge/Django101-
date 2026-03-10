@@ -5,10 +5,10 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request): 
     context = {'data':'Welcome Software Engineers!'} #data
-    return render(request, 'home.html', context)
+    return render(request, 'firstApp/home.html', context)
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'firstApp/about.html')
 
 def contact(request):
     context = {
@@ -17,7 +17,7 @@ def contact(request):
         'year':2026, 
         'location':'Nairobi' 
         }
-    return render(request, 'contact.html', context)
+    return render(request, 'firstApp/contact.html', context)
 
 
 
@@ -27,7 +27,7 @@ def experiences(request):
         'year':2026,
         'age':20
     }  # dictionary tht will host our data
-    return render(request, 'experience.html', context)
+    return render(request, 'firstApp/experience.html', context)
 
 
 def landing(request):
